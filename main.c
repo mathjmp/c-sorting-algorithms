@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "list/list.c"
 #include "linear_search/linear_search.c"
 #include "binary_search/binary_search.c"
 
