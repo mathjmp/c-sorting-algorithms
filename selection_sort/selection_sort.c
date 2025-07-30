@@ -1,0 +1,21 @@
+#include "selection_sort.h"
+
+void selection_sort(list *list) {
+
+    int *array = list->data;
+    int min = 0;
+
+    for (int i = 0; i < list->length - 1; i++) {
+
+        for (int j = i + 1; j < list->length; j++) {
+
+            if (array[j + 1] < array[j]) {
+                min = j + 1;
+            }
+        }
+
+        int tmp = array[0];
+        array[0] = array[min];
+        array[min] = tmp;
+    }
+}
