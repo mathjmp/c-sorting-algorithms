@@ -7,5 +7,6 @@ typedef struct list {
 } list;
 
 list* new_list(int length);
+void show_list(list*);
 
 #endif
