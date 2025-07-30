@@ -1,0 +1,17 @@
+#include "bubble_sort.h"
+
+void bubble_sort(list *list) {
+
+    for (int i = 0; i < list->length - 1; i++) {
+
+        for (int j = 0; j < list->length - 1 - i; j++) {
+
+            int* array = list->data;
+            if (array[j] > array[j + 1]) {
+                int tmp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = tmp;
+            }
+        }
+    }
+}

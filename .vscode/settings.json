@@ -3,6 +3,7 @@
         "linear_search.h": "c",
         "binary_search.h": "c",
         "list.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "bubble_sort.h": "c"
     }
 }
