@@ -6,16 +6,16 @@ void selection_sort(list *list) {
     int min = 0;
 
     for (int i = 0; i < list->length - 1; i++) {
-
+        int min = i;
         for (int j = i + 1; j < list->length; j++) {
 
-            if (array[j + 1] < array[j]) {
-                min = j + 1;
+            if (array[j] < array[min]) {
+                min = j;
             }
         }
 
-        int tmp = array[0];
-        array[0] = array[min];
+        int tmp = array[i];
+        array[i] = array[min];
         array[min] = tmp;
     }
 }
